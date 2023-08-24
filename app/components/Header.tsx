@@ -32,8 +32,8 @@ const Header = ({ router }: any) => {
     ]
 
     return (
-        <div className='bg-black flex justify-between items-center px-8'>
-            <Image src={Images.UnsolvedLogo} alt='logo' className='h-16' />
+        <div className='bg-black flex justify-between items-center px-8 h-[129px] main-navbar'>
+            <Image src={Images.UnsolvedLogo} alt='logo' className='h-[103px]' />
             <div className='flex gap-x-10 py-[14px]'>
                 <div className='flex gap-x-8'>
                     {navs.map((item: any, i) => (
@@ -44,7 +44,6 @@ const Header = ({ router }: any) => {
                 </div>
                 <button className='text-secondary'>Get Solved</button>
             </div>
-
         </div>
     )
 }

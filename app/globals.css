@@ -37,27 +37,33 @@ body {
   }
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+.main-navbar {
+  border-bottom: 1px solid #494949;
 }
 
 .active-link {
   border-bottom: 1px solid #641BA9;
 }
+
+/* home page css  */
+
+
+.text-container {
+  position: relative; 
+}
+
+.home-heading { 
+  z-index: 1; 
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: black;
+  height: 512px;
+  width: 512px;
+  position: absolute;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
