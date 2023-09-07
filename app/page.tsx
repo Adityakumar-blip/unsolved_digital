@@ -3,6 +3,7 @@ import MainLayout from './layouts/MainLayout'
 
 export default function Home() {
   return (
-    <div>index Page</div>
+    <div className='flex h-[88vh] bg-black'>
+    </div>
   )
 }
