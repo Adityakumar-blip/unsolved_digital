@@ -507,3 +507,64 @@ left: -10%;
   flex-direction: row;
   gap: 1.6rem;
 }
+
+/* footer css end */
+
+/* works css start */
+
+.work-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.left-work {
+ display: flex;
+ flex-direction: column;
+ gap: 3rem;
+}
+
+.left-work-one {
+  width: 35rem;
+  overflow: hidden;
+}
+
+.left-work-one img {
+  height: 100%;
+  width: 100%;
+}
+
+.right-work-one {
+  width: 40rem;
+  overflow: hidden;
+}
+
+.right-work-one img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.right-work {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.left-work-one img,
+.right-work-one img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  transform: scale(1);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Remove grayscale filter on hover */
+.left-work-one img:hover,
+.right-work-one img:hover {
+  filter: none;
+  transform: scale(1.1);
+  transition: filter 0.3s ease, transform 0.5s ease;
+}

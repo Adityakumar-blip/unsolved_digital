@@ -33,8 +33,9 @@ const GsapSwiperComponent = () => {
 
   useEffect(() => {
     const factsContainer = document.querySelector(".factsContainer");
-    const facts = [...factsContainer.querySelectorAll(".fact")];
+    const facts = Array.from(factsContainer?.querySelectorAll(".fact") || []);
     const smallFactsContainer = document.querySelector(".factsContainer_sm");
+    
 
     const scroll_tl = gsap.timeline({
       scrollTrigger: {

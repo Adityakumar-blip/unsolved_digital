@@ -7,7 +7,7 @@ const CustomCursor = () => {
         const cursor = document.getElementById('custom-cursor');
         const links = document.querySelectorAll('a');
 
-        const onMouseMove = (event) => {
+        const onMouseMove = (event : MouseEvent) => {
             const { clientX, clientY } = event;
             gsap.to(cursor, { x: clientX, y: clientY });
         };
