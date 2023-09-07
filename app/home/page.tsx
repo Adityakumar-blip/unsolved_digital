@@ -2,6 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import { Images } from '../utils/ImageService'
 import Whatwedo from '../components/Whatwedo';
+import Members from '../components/Members';
+import Testomonial from '../components/Testomonial';
+import Contact from '../components/Contact';
+import Projects from '../components/Projects';
 
 
 const Page = () => {
@@ -18,6 +22,10 @@ const Page = () => {
         </div>
       </div>
       <Whatwedo />
+      <Projects/>
+      <Members/>
+      <Testomonial/>
+      <Contact/>
     </>
   );
 }
