@@ -22,8 +22,8 @@ const Header = ({ router }: any) => {
             link: "/service"
         },
         {
-            name: "About",
-            link: "/about"
+            name: "Unsolved",
+            link: "/unsolved"
         },
         {
             name: "Contact",
