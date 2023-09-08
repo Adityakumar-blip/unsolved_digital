@@ -568,3 +568,52 @@ left: -10%;
   transform: scale(1.1);
   transition: filter 0.3s ease, transform 0.5s ease;
 }
+
+/* unsolved css  */
+
+.unsolved-ethics {
+  background-color: #641BA9;
+  height: 30rem;
+  width: 100%;
+  border-radius: 3rem;
+  margin-top: 5rem;
+}
+
+.teams-card {
+  width: 31rem;
+  height: 17.68rem;
+  border-radius: 0rem 1.875rem 1.875rem 1.875rem;
+  text-align: center;
+  padding: 2.38rem;
+  position: relative;
+  margin-top: 8.2rem;
+  background-color: white;
+}
+
+.teams-img-0 {
+  width: 9.375rem;
+  height: 15.1875rem;
+  border-radius: 6.25rem;
+background: url('https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vZGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+background-size: cover;
+background-position: center;
+position: absolute;
+top: -40%;
+left: -10%;
+}
+
+.teams-img-1 {
+  width: 9.375rem;
+  height: 15.1875rem;
+  border-radius: 6.25rem;
+background: url('https://images.unsplash.com/photo-1564485377539-4af72d1f6a2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1vZGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60.');
+background-size: cover;
+background-position: center;
+position: absolute;
+top: -40%;
+left: -10%;
+}
+
+.contact-container {
+  padding: 4rem 0 0 4rem;
+}

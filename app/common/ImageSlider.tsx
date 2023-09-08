@@ -2,6 +2,11 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import web from '../assets/images/web.jpg'
+import app from '../assets/images/app.jpg'
+import branding from '../assets/images/branding.jpg'
+import marketing from '../assets/images/marketing.jpg'
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,22 +14,22 @@ const GsapSwiperComponent = () => {
 
   const factData = [
     {
-      imageSrc: 'https://source.unsplash.com/random',
+      imageSrc: web,
       title: 'Web Development',
       description: 'Description for web development.',
     },
     {
-      imageSrc: 'https://source.unsplash.com/random',
+      imageSrc: app,
       title: 'Mobile Development',
       description: 'Description for mobile development.',
     },
     {
-      imageSrc: 'https://source.unsplash.com/random',
+      imageSrc: marketing,
       title: 'Digital Marketing',
-      description: 'Description for digital marketing.',
+      description: 'Description for mobile development.',
     },
     {
-      imageSrc: 'https://source.unsplash.com/random',
+      imageSrc: branding,
       title: 'Branding',
       description: 'Description for branding.',
     },
@@ -75,8 +80,9 @@ const GsapSwiperComponent = () => {
       <div className="factsContainer_sm">
         {factData.map((fact, index) => (
           <div className="fact" key={index}>
-            <div className="image-container">
-              <img src={fact.imageSrc} alt={fact.title} />
+           { console.log('fact' , fact)}
+            <div className="image-container h-[30rem]">
+              <img src={fact.imageSrc.src} alt={fact.title} />
               <div className="overlay">
                 <h4 className="font-normal text-white pl-[20px]">{fact.title}</h4>
                 {/* <span>{fact.description}</span> */}
