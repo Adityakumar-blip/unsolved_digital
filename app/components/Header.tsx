@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import { Images } from '../utils/ImageService'
 import Image from 'next/image'
