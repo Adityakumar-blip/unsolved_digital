@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import web from '../assets/images/web.jpg'
@@ -34,13 +34,15 @@ const GsapSwiperComponent = () => {
       description: 'Description for branding.',
     },
   ];
-  
+
+  const width = useWidth()
+
 
   useEffect(() => {
     const factsContainer = document.querySelector(".factsContainer");
     const facts = Array.from(factsContainer?.querySelectorAll(".fact") || []);
     const smallFactsContainer = document.querySelector(".factsContainer_sm");
-    
+
 
     const scroll_tl = gsap.timeline({
       scrollTrigger: {
@@ -75,26 +77,38 @@ const GsapSwiperComponent = () => {
   }, []);
 
   return (
-    <div className="wrapper pl-[6.8rem]">
-    <div className="factsContainer">
-      <div className="factsContainer_sm">
-        {factData.map((fact, index) => (
-          <div className="fact" key={index}>
-           { console.log('fact' , fact)}
-            <div className="image-container h-[30rem]">
-              <img src={fact.imageSrc.src} alt={fact.title} />
-              <div className="overlay">
-                <h4 className="font-normal text-white pl-[20px]">{fact.title}</h4>
-                {/* <span>{fact.description}</span> */}
+    <div className="wrapper pl-[6.8rem] sm:hidden max-sm:hidden md:block  ">
+      <div className="factsContainer">
+        <div className="factsContainer_sm">
+          {factData.map((fact, index) => (
+            <div className="fact" key={index}>
+              <div className="image-container h-[30rem]">
+                <img src={fact.imageSrc.src} alt={fact.title} />
+                <div className="overlay">
+                  <h4 className="font-normal text-white pl-[20px]">{fact.title}</h4>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
-  </div>
-  
+
   );
 };
 
 export default GsapSwiperComponent;
+
+
+
+const useWidth = () => {
+  const [width, setWidth] = useState(0)
+  const handleResize = () => setWidth(window.innerWidth)
+  useEffect(() => {
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  return width
+}
