@@ -2,13 +2,13 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='w-full  p-3 text-white bg-black font-bold p-[4rem]'>
-            <div className="footer-main ">
+        <div className='w-full p-3  text-white bg-black font-bold p-[4rem] '>
+            <div className="footer-main max-sm:text-center sm:text-center md:text-start">
                 <h4 className='font-black text-white'>UNSOLVED</h4>
-                <p className='italic w-[35%] mt-1.5 text-white font-light'>Apps and websites are major channels for delivering entertainment content, such as videos, games, and multimedia.</p>
+                <p className='italic w-[35%] mt-1.5 text-white font-light max-sm:text-center sm:text-center md:text-start w-full'>Apps and websites are major channels for delivering entertainment content, such as videos, games, and multimedia.</p>
             </div>
-            <div className="footer-sub ">
-                <h6 className='text-white'>Unsolved.agency@gmail.com</h6>
+            <div className="footer-sub flex-wrap gap-3 items-center">
+                <h6 className='text-white max-sm:w-full sm:w-full md:w-auto text-center'>Unsolved.agency@gmail.com</h6>
                 <div className="social-links">
                     <div className="linkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
