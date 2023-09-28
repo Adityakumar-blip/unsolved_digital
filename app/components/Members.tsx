@@ -43,7 +43,7 @@ const Members = () => {
                                 <h5 className='text-primary'>{member.title}</h5>
                             </div>
                             <div className={`members-img-${index}`} />
-                            <h4 className='text-left pt-[2rem]'>
+                            <h4 className='text-left text-white pt-[2rem]'>
                                 {member.intro}
                             </h4>
                         </div>

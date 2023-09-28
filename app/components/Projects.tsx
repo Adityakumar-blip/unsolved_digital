@@ -1,4 +1,9 @@
 import React from 'react';
+import selfstudy from '../assets/images/selfstudy.jpeg'
+import socialpubli from '../assets/images/socialpubli.jpeg'
+import mujammil from '../assets/images/muzzammil.png'
+import collegebazaar from '../assets/images/collegebazaar.jpeg'
+import Link from 'next/link';
 
 const Projects = () => {
   return (
@@ -17,16 +22,20 @@ const Projects = () => {
           </div> */}
           <div className="projects-container">
             <div className="left-projects">
-              <div className="left-one">
-
-              </div>
-              <div className="left-two">
-
-              </div>
+              <a href='https://self-study.in/' target='_blank'><div className="left-one">
+                <img src={selfstudy.src} alt='self-study' />
+              </div></a>
+              <a href='https://socialpubli.netlify.app/' target='_blank'><div className="left-two">
+                <img src={socialpubli.src} />
+              </div></a>
             </div>
             <div className="right-projects">
-              <div className="right-one"></div>
-              <div className="right-two"></div>
+              <a href='https://almujammilfragrance.com/' target='_blank'><div className="right-one">
+                <img src={mujammil.src} />
+              </div></a>
+              <a href='https://collegebazaar.netlify.app/' target='_blank'><div className="right-two">
+                <img src={collegebazaar.src} />
+              </div></a>
             </div>
           </div>
 
