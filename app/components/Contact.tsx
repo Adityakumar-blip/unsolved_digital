@@ -3,6 +3,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <div className='bg-black md:p-[10rem] sm:p-2 max-sm:p-2'>
+            <h1 className='discussion-heading'>Ready to discuss your project?</h1>
             <div className='contact-first'>
                 <div className='contact-second flex flex-row'>
                     <div className='contact-details '>

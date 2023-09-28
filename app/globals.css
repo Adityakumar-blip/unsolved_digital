@@ -361,18 +361,30 @@ input[type="checkbox"] {
 }
 
 .left-one {
-  height: 539px;
-  width: 433px;
+  height: 700px;
+  width: 400px;
   background-color: #F0C368;
   border-radius: 1rem;
 }
 
+.left-one img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  /* object-fit: contain; */
+}
+
 .left-two {
-  height: 539px;
-  width: 433px;
+  height: 700px;
+  width: 400px;
   background-color: #715928;
   border-radius: 1rem;
+}
 
+.left-two img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .right-projects {
@@ -382,20 +394,33 @@ input[type="checkbox"] {
   margin-top: 10rem;
 }
 
+
 .right-one {
-  height: 539px;
-  width: 433px;
+  height: 700px;
+  width: 400px;
   background-color: #82dcd0;
   border-radius: 1rem;
 
 }
 
+.right-one img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
 .right-two {
-  height: 539px;
-  width: 433px;
+  height: 700px;
+  width: 400px;
   background-color: #d899ea;
   border-radius: 1rem;
 
+}
+
+.right-two img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .blank_circle {
@@ -800,6 +825,10 @@ left: -10%;
     border: none;
     height: 100%;
     width: 100%;
+  }
+
+  .discussion-heading {
+    font-size: 15rem;
   }
 
   .contact-second{
