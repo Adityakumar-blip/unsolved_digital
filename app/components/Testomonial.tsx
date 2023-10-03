@@ -44,7 +44,7 @@ const Testimonial = () => {
     <div className="bg-black flex flex-col items-center pb-[5rem]">
       <div className="flex flex-col justify-center items-center pt-20 mb-[4rem]">
         <h5 className="text-primary">What</h5>
-        <h2 className="text-white">OUR CLIENT SAYS</h2>
+        <h2 className="text-white">OUR CLIENT SAYSSS</h2>
         <h5 className="text-primary">ABOUT UNSOLVED</h5>
       </div>
 
